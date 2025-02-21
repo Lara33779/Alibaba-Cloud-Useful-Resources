@@ -6,7 +6,7 @@ Welcome to our **Alibaba Cloud Knowledge Series repository**! This repository sh
 **All for free**! Whether you're looking to enhance your cloud expertise or explore new possibilities with **Alibaba Cloud**, 
 this repository will be your go-to resource.
 
-For the latest information or to get detailed documents, please visit the [Alibaba Cloud official website]([https://www.alibabacloud.com](https://www.alibabacloud.com?utm_content=g_1000402000)) 🌐📄.
+For the latest information or to get detailed documents, please visit the [Alibaba Cloud official website](https://www.alibabacloud.com) 🌐📄.
 
 ---
 🚀 **Join Our Cloud Computing Community!** 🌐
