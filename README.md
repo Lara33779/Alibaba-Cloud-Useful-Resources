@@ -18,6 +18,8 @@ For the latest information or to get detailed documents, please visit the [Aliba
 - Engage with global tech enthusiasts and experts
 - Level up your skills and grow together
 t
-Join us now to discuss, learn, and grow with the community! Click on the picture below!
+Join us now to discuss, learn, and grow with the community!
+
+Click the image below to join now! 👇
 
 <a href ="https://discord.gg/KPmq628K63"><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/lrvg8ctk39c4j2umywln.png"></a>
