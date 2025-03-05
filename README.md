@@ -7,7 +7,7 @@ Welcome to our **Alibaba Cloud Knowledge Series repository**! This repository sh
 **All for free**! Whether you're looking to enhance your cloud expertise or explore new possibilities with **Alibaba Cloud**,  
 this repository will be your go-to resource.
 
-For the latest information or to get detailed documents, please visit the [Alibaba Cloud official website](https://www.alibabacloud.com?utm_content=g_1000402000) 🌐📄.
+For the latest information or detailed documents, please visit the [Alibaba Cloud official website](https://www.alibabacloud.com?utm_content=g_1000402000) 🌐📄.
 
 ---
 
@@ -28,19 +28,17 @@ For the latest information or to get detailed documents, please visit the [Aliba
 We regularly share insightful blog posts that cover:
 - **Technical Insights**: Stay ahead with the latest cloud technologies.
 - **Industry Trends**: Learn about key trends shaping the future of cloud computing.
-- **Marketing Strategies**: Discover tips and strategies to effectively market cloud-based products.
 
 我们定期分享有价值的博客内容，涵盖以下内容：
 - **技术见解**：紧跟云计算技术的最新发展。
 - **行业趋势**：了解云计算行业未来的关键趋势。
-- **营销策略**：发现有效推广云计算产品的技巧和策略。
 
 ---
 
 # 🔗 Free Trial Products / 免费试用产品
 
 Explore the **free trial products** available on our official website:
-- **Alibaba Cloud Products**: Try out the latest cloud services at no cost!
+- **Alibaba Cloud Products**: Try the latest cloud services at no cost!
 - **AI Solutions**: Explore our generative AI tools for your business needs.
 
 在我们官网上探索 **免费试用产品**：
@@ -65,12 +63,12 @@ We offer a variety of Alibaba Cloud products designed for different use cases, h
 
 # 🤖 AI Resources / AI资源
 
-We’re excited to introduce an **AI** Folder for our community! This folder includes:
+We’re excited to introduce an **AI** Folder! This folder includes:
 - **AI Product Documentation**: Dive into our cutting-edge AI solutions and how to implement them.
 - **AI Case Studies**: Real-world examples of how businesses have leveraged AI for success.
 - **AI Tutorials**: Step-by-step guides to help you get started with AI in your cloud environment.
 
-我们很高兴为社区增设一个**AI**资源文件夹！其中包含：
+我们很高兴增设一个**AI**资源文件夹！其中包含：
 - **AI产品文档**：深入了解我们的前沿AI解决方案及其应用。
 - **AI案例研究**：展示企业如何成功利用AI。
 - **AI教程**：为您提供逐步指南，帮助您在云环境中实现AI应用。
@@ -108,7 +106,7 @@ We encourage contributions to this repository.
 
 # 🚀 **Join Our Cloud Computing Community!** 🌐
 
-🎉 Our community is thriving with tech enthusiasts and experts! Come and explore the latest technologies, share your experiences, and discuss the trends in the cloud computing industry. Whether you're an industry veteran or just starting out, you'll find valuable resources and like-minded people here! 🔥
+🎉 Our community is thriving with tech enthusiasts and experts! Come and explore the latest technologies, share your experiences, and discuss the trends in the cloud computing industry. Whether you're an industry veteran or just starting, you'll find valuable resources and like-minded people here! 🔥
 
 💬 Here’s what you can expect:
 - Access to the latest cloud computing insights and tips
