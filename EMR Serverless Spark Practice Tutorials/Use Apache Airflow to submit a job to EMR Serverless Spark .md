@@ -1,49 +1,37 @@
-Use Apache Airflow to submit a job to EMR Serverless Spark {#8a1763aa67ahg}
-===========================================================================
-
 Apache Airflow is a powerful workflow automation and scheduling tool that allows developers to orchestrate, schedule, and monitor the running of data pipelines. E-MapReduce (EMR) Serverless Spark provides a serverless computing environment for processing large-scale data processing jobs. This topic describes how to use Apache Airflow to enable automatic job submission to EMR Serverless Spark. This way, you can automate job scheduling and running to manage data processing jobs more efficiently. {#b62d44e7f4gk3}
 
-**Prerequisites** {#2d14384d3b6i3}
+**Prerequisites**
 ----------------------------------
 
 * Airflow is installed and started. For more information, see [Installation of Airflow](https://airflow.apache.org/docs/apache-airflow/stable/installation/index.html){#456f88e52cj1s}.
 
-  {#39c9536dafttq}
-{#fe1bb05ea5ukw}
+
 * A workspace is created. For more information, see [Create a workspace](t2488607.md#){#3bdf17bfe2sex}.
 
-  {#39e45f027cd7p}
-{#3af810b673fzu}
 
-{#09660de344krn}
-
-**Usage notes** {#38a6a462e0bfj}
+**Usage notes**
 --------------------------------
 
-You cannot call the EmrServerlessSparkStartJobRunOperator operation to query job logs. If you want to view job logs, you must go to the EMR Serverless Spark page and find the job run whose logs you want to view by job run ID. Then, you can check and analyze the job logs on the **Logs** tab of the job details page or on the Spark Jobs page in the **Spark UI** .
+You cannot call the EmrServerlessSparkStartJobRunOperator operation to query job logs. If you want to view job logs, you must go to the EMR Serverless Spark page and find the job run whose logs you want to view by job run ID. Then, you can check and analyze the job logs on the **Logs** tab of the job details page or on the Spark Jobs page in the **Spark UI**.
 
-**Procedure** {#aa626b60798sf}
+**Procedure**
 ------------------------------
 
-### **Step 1:** Configure Apache Airflow {#d114fc76dexj3}
+### **Step 1:** Configure Apache Airflow
 
-1. Download [airflow_alibaba_provider-0.0.3-py3-none-any.whl](https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20241206/fwrfkp/airflow_alibaba_provider-0.0.3-py3-none-any.whl){#0de54c6903u4h}.
+1. Download [airflow_alibaba_provider-0.0.3-py3-none-any.whl](https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20241206/fwrfkp/airflow_alibaba_provider-0.0.3-py3-none-any.whl).
 
-   {#221084c7acfdh}
-{#78c04c9e54pmb}
-2. Install the airflow-alibaba-provider plug-in on each node of Airflow. {#17665994d4i5h}
+2. Install the airflow-alibaba-provider plug-in on each node of Airflow.
 
-   The airflow-alibaba-provider plug-in is provided by EMR Serverless Spark. It contains the EmrServerlessSparkStartJobRunOperator component, which is used to submit jobs to EMR Serverless Spark. {#349fba8598v7w}
+   The airflow-alibaba-provider plug-in is provided by EMR Serverless Spark. It contains the EmrServerlessSparkStartJobRunOperator component, which is used to submit jobs to EMR Serverless Spark.
 
    ```sh
    pip install airflow_alibaba_provider-0.0.3-py3-none-any.whl
    ```
 
-   {#975b53d512wee}{#2bd8340ee0j0d}
-{#2bd8340ee0j0d}
-3. Add a connection. {#b9eff1eeddt3p}
+3. Add a connection.
 
-   Use the CLI {#69b8889d8457j}
+   Use the CLI
    ----------------------------
 
    Use the Airflow command-line interface (CLI) to run commands to establish a connection. For more information, see [Creating a Connection](https://airflow.apache.org/docs/apache-airflow/stable/howto/usage-cli.html#creating-a-connection){#93f29ab539z36}. {#74f21e2ff37lc}
@@ -66,14 +54,13 @@ You cannot call the EmrServerlessSparkStartJobRunOperator operation to query job
    Use the UI {#cacab93e11u0w}
    ---------------------------
 
-   You can manually create a connection with the Airflow web UI. For more information, see [Creating a Connection with the UI](https://airflow.apache.org/docs/apache-airflow/stable/howto/connection.html#creating-a-connection-with-the-ui){#fac1432b8bbym}. {#637004c5fe5sw}
+   You can manually create a connection with the Airflow web UI. For more information, see [Creating a Connection with the UI](https://airflow.apache.org/docs/apache-airflow/stable/howto/connection.html#creating-a-connection-with-the-ui)
 
-   On the **Add Connection** page, configure the parameters. {#3fe5915f80t5x}
+   On the **Add Connection** page, configure the parameters.
 
-   ![image](../images/p800766.png){#bb4a71290ay9l}
+   ![image](../images/p800766.png)
 
-   The following table describes the parameters: {#6d383c4ffdp70}
-   {#b03da7b3a2s3h}{#e7afa02763nfz}{#1fb0deb37ebdj}{#a7a6689f5cee6}
+   The following table describes the parameters:
 
    |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | **Parameter**       | **Description**                                                                                                                                                                                                                                                                                                                                                                                                   |
