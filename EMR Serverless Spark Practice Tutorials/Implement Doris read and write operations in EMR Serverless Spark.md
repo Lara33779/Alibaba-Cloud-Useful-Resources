@@ -1,52 +1,48 @@
-Use Apache Airflow to submit a job to EMR Serverless Spark {#8a1763aa67ahg}
+Implement Doris read and write operations in EMR Serverless Spark
 ===========================================================================
+Leveraging the official Spark Connector from Apache Doris, EMR Serverless Spark can be configured to connect to Doris during development. This topic explains how to execute data read and write operations with Doris within the EMR Serverless Spark environment.
 
-Apache Airflow is a powerful workflow automation and scheduling tool that allows developers to orchestrate, schedule, and monitor the running of data pipelines. E-MapReduce (EMR) Serverless Spark provides a serverless computing environment for processing large-scale data processing jobs. This topic describes how to use Apache Airflow to enable automatic job submission to EMR Serverless Spark. This way, you can automate job scheduling and running to manage data processing jobs more efficiently. {#b62d44e7f4gk3}
+**Background information**
 
-**Prerequisites** {#2d14384d3b6i3}
+Apache Doris is a high-performance, real-time analytics database suitable for report analysis, ad hoc queries, and data lake federated query acceleration. For more information, see Introduction to Apache Doris.
+
+EMR Serverless Spark is a high-performance Lakehouse product compatible with open-source Spark, offering fully managed enterprise-level data platform services. Integrating Apache Doris with EMR Serverless Spark enables efficient data read, write, and analysis operations, facilitating a complete data processing workflow.
+
+**Prerequisites**
 ----------------------------------
 
-* Airflow is installed and started. For more information, see [Installation of Airflow](https://airflow.apache.org/docs/apache-airflow/stable/installation/index.html){#456f88e52cj1s}.
+* Airflow is installed and started. For more information, see [Installation of Airflow](https://airflow.apache.org/docs/apache-airflow/stable/installation/index.html).
 
-  {#39c9536dafttq}
-{#fe1bb05ea5ukw}
-* A workspace is created. For more information, see [Create a workspace](t2488607.md#){#3bdf17bfe2sex}.
+* A workspace is created. For more information, see [Create a workspace](t2488607.md#).
 
-  {#39e45f027cd7p}
-{#3af810b673fzu}
+**Limits**
+The Serverless Spark engine must be version esr-2.5.0, esr-3.1.0, esr-4.1.0, or later.
 
-{#09660de344krn}
-
-**Usage notes** {#38a6a462e0bfj}
+**Usage notes**
 --------------------------------
 
-You cannot call the EmrServerlessSparkStartJobRunOperator operation to query job logs. If you want to view job logs, you must go to the EMR Serverless Spark page and find the job run whose logs you want to view by job run ID. Then, you can check and analyze the job logs on the **Logs** tab of the job details page or on the Spark Jobs page in the **Spark UI** .
+You cannot call the EmrServerlessSparkStartJobRunOperator operation to query job logs. If you want to view job logs, you must go to the EMR Serverless Spark page and find the job run whose logs you want to view by job run ID. Then, you can check and analyze the job logs on the **Logs** tab of the job details page or on the Spark Jobs page in the **Spark UI**.
 
-**Procedure** {#aa626b60798sf}
+**Procedure**
 ------------------------------
 
-### **Step 1:** Configure Apache Airflow {#d114fc76dexj3}
+### **Step 1:** Configure Apache Airflow
 
-1. Download [airflow_alibaba_provider-0.0.3-py3-none-any.whl](https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20241206/fwrfkp/airflow_alibaba_provider-0.0.3-py3-none-any.whl){#0de54c6903u4h}.
+1. Download [airflow_alibaba_provider-0.0.3-py3-none-any.whl](https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20241206/fwrfkp/airflow_alibaba_provider-0.0.3-py3-none-any.whl).
 
-   {#221084c7acfdh}
-{#78c04c9e54pmb}
-2. Install the airflow-alibaba-provider plug-in on each node of Airflow. {#17665994d4i5h}
+2. Install the airflow-alibaba-provider plug-in on each node of Airflow.
 
-   The airflow-alibaba-provider plug-in is provided by EMR Serverless Spark. It contains the EmrServerlessSparkStartJobRunOperator component, which is used to submit jobs to EMR Serverless Spark. {#349fba8598v7w}
+   The airflow-alibaba-provider plug-in is provided by EMR Serverless Spark. It contains the EmrServerlessSparkStartJobRunOperator component, which is used to submit jobs to EMR Serverless Spark.
 
    ```sh
    pip install airflow_alibaba_provider-0.0.3-py3-none-any.whl
    ```
+3. Add a connection.
 
-   {#975b53d512wee}{#2bd8340ee0j0d}
-{#2bd8340ee0j0d}
-3. Add a connection. {#b9eff1eeddt3p}
-
-   Use the CLI {#69b8889d8457j}
+   Use the CLI
    ----------------------------
 
-   Use the Airflow command-line interface (CLI) to run commands to establish a connection. For more information, see [Creating a Connection](https://airflow.apache.org/docs/apache-airflow/stable/howto/usage-cli.html#creating-a-connection){#93f29ab539z36}. {#74f21e2ff37lc}
+   Use the Airflow command-line interface (CLI) to run commands to establish a connection. For more information, see [Creating a Connection](https://airflow.apache.org/docs/apache-airflow/stable/howto/usage-cli.html#creating-a-connection).
 
    ```sh
    airflow connections add 'emr-serverless-spark-id' \
@@ -61,45 +57,21 @@ You cannot call the EmrServerlessSparkStartJobRunOperator operation to query job
        }'
    ```
 
-   {#1c54b078eeu2x}
+  ```
 
-   Use the UI {#cacab93e11u0w}
-   ---------------------------
+### **Step 2:** Configure **DAGs**
 
-   You can manually create a connection with the Airflow web UI. For more information, see [Creating a Connection with the UI](https://airflow.apache.org/docs/apache-airflow/stable/howto/connection.html#creating-a-connection-with-the-ui){#fac1432b8bbym}. {#637004c5fe5sw}
+Apache Airflow provides Directed Acyclic Graphs (DAGs), which allow you to declare how jobs should run. The following are examples of how to call the EmrServerlessSparkStartJobRunOperator operation to run different types of Spark jobs in Apache Airflow.
+### Submit a JAR package
 
-   On the **Add Connection** page, configure the parameters. {#3fe5915f80t5x}
-
-   ![image](../images/p800766.png){#bb4a71290ay9l}
-
-   The following table describes the parameters: {#6d383c4ffdp70}
-   {#b03da7b3a2s3h}{#e7afa02763nfz}{#1fb0deb37ebdj}{#a7a6689f5cee6}
-
-   |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | **Parameter**       | **Description**                                                                                                                                                                                                                                                                                                                                                                                                   |
-   | **Connection Id**   | The connection ID. In this example, enter emr-serverless-spark-id.                                                                                                                                                                                                                                                                                                                                                |
-   | **Connection Type** | The connection type. In this example, select **Generic** . If Generic is not available, you can also select **Email** .                                                                                                                                                                                                                                                                                           |
-   | **Extra**           | The additional configuration. In this example, enter the following content: {#b19786848dkhw} ```sh { "auth_type": "AK", # The AccessKey pair is used for authentication. "access_key_id": "<yourAccesskeyId>", # The AccessKey ID of your Alibaba Cloud account. "access_key_secret": "<yourAccesskeyKey>", # The AccessKey secret of your Alibaba Cloud account. "region": "<yourRegion>" } ``` {#c3bfeaf593uqg} |
-
-   {#2ee57026375s0}{#6923f3d76afpd}
-{#6923f3d76afpd}
-
-{#d80895d63ahk4}
-
-### **Step 2:** Configure **DAGs** {#4e7075e92bli0}
-
-Apache Airflow provides Directed Acyclic Graphs (DAGs), which allow you to declare how jobs should run. The following are examples of how to call the EmrServerlessSparkStartJobRunOperator operation to run different types of Spark jobs in Apache Airflow. {#d025271874vq3}
-
-### Submit a JAR package {#89a6e01dd3hz2}
-
-Use an Airflow task to submit a precompiled Spark JAR job to EMR Serverless Spark. {#0e3064baa5kd1}
+Use an Airflow task to submit a precompiled Spark JAR job to EMR Serverless Spark.
 
 ```python
 from __future__ import annotations
 
 from datetime import datetime
 
-from airflow.models.dag import DAG
+from airflow. models. dag import DAG
 from airflow_alibaba_provider.alibaba.cloud.operators.emr import EmrServerlessSparkStartJobRunOperator
 
 # Ignore missing args provided by default_args
@@ -133,18 +105,16 @@ with DAG(
     emr_spark_jar
 ```
 
-{#0236abbbe8fna}
+### Submit an SQL file
 
-### Submit an SQL file {#4c73eb18f9xoc}
-
-Run SQL commands in Airflow DAGs. {#e5156c1fcdj40}
+Run SQL commands in Airflow DAGs.
 
 ```python
 from __future__ import annotations
 
 from datetime import datetime
 
-from airflow.models.dag import DAG
+from airflow. models.dag import DAG
 from airflow_alibaba_provider.alibaba.cloud.operators.emr import EmrServerlessSparkStartJobRunOperator
 
 # Ignore missing args provided by default_args
@@ -171,7 +141,7 @@ with DAG(
         name="airflow-emr-spark-sql",
         entry_point=None,
         entry_point_args=["-e","show tables;show tables;"],
-        spark_submit_parameters="--class org.apache.spark.sql.hive.thriftserver.SparkSQLCLIDriver --conf spark.executor.cores=4 --conf spark.executor.memory=20g --conf spark.driver.cores=4 --conf spark.driver.memory=8g --conf spark.executor.instances=1",
+        spark_submit_parameters="--class org.apache.spark.sql.hive.thriftserver.SparkSQLCLIDriver --conf spark.executor.cores=4 --conf spark.executor.memory=20g --conf spark.driver.cores=4 --conf spark. driver.memory=8g --conf spark.executor.instances=1",
         is_prod=True,
         engine_release_version=None,
     )
@@ -180,18 +150,16 @@ with DAG(
 
 ```
 
-{#6b050368960sk}
+### Submit an SQL file from OSS
 
-### Submit an SQL file from OSS {#757913ad5f9ks}
-
-Run the SQL script file obtained from OSS. {#92a6fa7b642ow}
+Run the SQL script file obtained from OSS.
 
 ```python
 from __future__ import annotations
 
 from datetime import datetime
 
-from airflow.models.dag import DAG
+from airflow. models.dag import DAG
 from airflow_alibaba_provider.alibaba.cloud.operators.emr import EmrServerlessSparkStartJobRunOperator
 
 # Ignore missing args provided by default_args
@@ -217,7 +185,7 @@ with DAG(
         name="airflow-emr-spark-sql-2",
         entry_point="",
         entry_point_args=["-f", "oss://<YourBucket>/spark-resource/examples/sql/show_db.sql"],
-        spark_submit_parameters="--class org.apache.spark.sql.hive.thriftserver.SparkSQLCLIDriver --conf spark.executor.cores=4 --conf spark.executor.memory=20g --conf spark.driver.cores=4 --conf spark.driver.memory=8g --conf spark.executor.instances=1",
+        spark_submit_parameters="--class org.apache.spark.sql.hive.thriftserver.SparkSQLCLIDriver --conf spark.executor.cores=4 --conf spark.executor.memory=20g --conf spark.driver.cores=4 --conf spark. driver.memory=8g --conf spark.executor.instances=1",
         is_prod=True,
         engine_release_version=None
     )
@@ -226,18 +194,16 @@ with DAG(
 
 ```
 
-{#6f412a0bd3cx4}
+### Submit a Python script from OSS
 
-### Submit a Python script from OSS {#3d1afe9bc7i2p}
-
-Run the Python script file obtained from OSS. {#6b461b217bpwe}
+Run the Python script file obtained from OSS.
 
 ```python
 from __future__ import annotations
 
 from datetime import datetime
 
-from airflow.models.dag import DAG
+from airflow. models.dag import DAG
 from airflow_alibaba_provider.alibaba.cloud.operators.emr import EmrServerlessSparkStartJobRunOperator
 
 # Ignore missing args provided by default_args
@@ -271,26 +237,4 @@ with DAG(
     emr_spark_python
 
 ```
-
-{#49144e9c19iyg}
-
-The following table describes the parameters: {#b7678149c52cu}
-{#900c45141fopr}{#a9e2e4b6a10x6}{#51757f97f8qia}{#ad3191ee7f57b}{#f426811990kd9}{#dba60928441n2}{#8735ae32behwu}{#ae8dbb0ff8mwe}{#906d0a9b040ms}{#5c2eecc9e3yh6}{#5b464bbc1b6jo}{#72b950edc0ern}{#77cb7342ccpv4}{#122224409fh3m}
-
-|--------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Parameter**                  | **Type** | **Description**                                                                                                                                                                                                                                                                   |
-| `task_id`                      | `str`    | The unique identifier of the Airflow task.                                                                                                                                                                                                                                        |
-| `emr_serverless_spark_conn_id` | `str`    | The ID of the connection between Airflow and EMR Serverless Spark.                                                                                                                                                                                                                |
-| `region`                       | `str`    | The region in which the EMR Spark job is created.                                                                                                                                                                                                                                 |
-| `polling_interval`             | `int`    | The interval at which Airflow queries the state of the job. Unit: seconds.                                                                                                                                                                                                        |
-| `workspace_id`                 | `str`    | The unique identifier of the workspace to which the EMR Spark job belongs.                                                                                                                                                                                                        |
-| `resource_queue_id`            | `str`    | The ID of the resource queue used by the EMR Spark job.                                                                                                                                                                                                                           |
-| `code_type`                    | `str`    | The job type. SQL, Python, and JAR jobs are supported. The meaning of the entry_point parameter varies based on the job type.                                                                                                                                                     |
-| `name`                         | `str`    | The name of the EMR Spark job.                                                                                                                                                                                                                                                    |
-| `entry_point`                  | `str`    | The location of the file that is used to start the job. JAR, SQL, and Python files are supported. The meaning of this parameter varies based on `code_type`.                                                                                                                      |
-| `entry_point_args`             | `List`   | The parameters that are passed to the Spark application.                                                                                                                                                                                                                          |
-| `spark_submit_parameters`      | `str`    | The additional parameters used for the `spark-submit` command.                                                                                                                                                                                                                    |
-| `is_prod`                      | `bool`   | The environment in which the job runs. If this parameter is set to True, the job runs in the production environment. In this case, the `resource_queue_id` parameter must be set to the ID of the corresponding resource queue in the production environment, such as root_queue. |
-| `engine_release_version`       | `str`    | The version of the EMR Spark engine. Default value: esr-2.1-native, which indicates an engine that runs Spark 3.3.1 and Scala 2.12 in the native runtime.                                                                                                                         |
-
-{#5e374c61eesfa}
+                                                                                                                     |
