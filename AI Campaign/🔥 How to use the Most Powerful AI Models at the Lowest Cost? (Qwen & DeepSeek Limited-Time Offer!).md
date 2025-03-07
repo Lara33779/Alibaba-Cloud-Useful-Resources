@@ -33,13 +33,16 @@ With **Bailian Multimodal AI**, analyze different modal data for efficient infor
 
 
 👉 [Find Your Perfect AI Model](https://www.alibabacloud.com/campaign/unlocking-enterprise-gen-ai?utm_content=g_1000402433)
-```
 
-Copy and paste this Markdown code directly into a GitHub README file or any Markdown-compatible editor.
 
-## 🎯 Limited-Time Benefits: 88% Discount + 1 Million Free Tokens!  
-⏳ Join the **Alibaba Cloud AI Experience Program** now and enjoy:  
-✅ **1 Million Free Qwen Tokens**, experience large models at no cost, and accelerate your innovation!  
-✅ **DeepSeek Limited-Time Discount**, easily implement AI applications to enhance your business’s competitiveness!  
-✅ **Exclusive AI Courses + Webinars**, master cutting-edge AI trends and elevate your team’s capabilities!  
+## 🎯 Limited-Time Benefits: 88% Discount + 1 Million Free Tokens!
+
+⏳ Join the **Alibaba Cloud AI Experience Program** now and enjoy:
+
+- ✅ **1 Million Free Qwen Tokens**: Experience large models at no cost and accelerate your innovation!
+- ✅ **DeepSeek Limited-Time Discount**: Easily implement AI applications to enhance your business's competitiveness!
+- ✅ **Exclusive AI Courses + Webinars**: Master cutting-edge AI trends and elevate your team's capabilities!
+
 👉 [Claim Your AI Trial Credits Now](https://www.alibabacloud.com/campaign/unlocking-enterprise-gen-ai?utm_content=g_1000402433)
+
+
