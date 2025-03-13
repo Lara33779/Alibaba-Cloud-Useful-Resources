@@ -40,7 +40,7 @@ The Doris Spark Connector JAR package is named according to the format spark-dor
 
 Step 2: Create network connectivity
 
-   ### **Step 2:** Create network connectivity
+### **Step 2:** Create network connectivity
    
 Serverless Spark must establish network connectivity with the EMR Doris cluster to access Doris services normally. For network connectivity information, see Network connectivity between EMR Serverless Spark and other VPCs.
 
@@ -53,24 +53,10 @@ When configuring security group rules, selectively open only the necessary ports
 
 2. Execute the following command to connect to the EMR Doris cluster.
 
-mysql -h127.0.0.1  -P 9031 -uroot
+   ```bash
+   mysql -h127.0.0.1 -P 9031 -uroot
 
 3. Create a database and table.
-CREATE DATABASE IF NOT EXISTS testdb;
 
-USE testdb;
-
-CREATE TABLE test (
-    id INT, 
-    name STRING
-) PROPERTIES("replication_num" = "1");
-
-4. Insert test data.
-INSERT INTO test VALUES (1, 'a'), (2, 'b'), (3, 'c');
-
-5. Query data.
-SELECT * FROM test;
-The following figure shows the returned information.
-![image](https://github.com/user-attachments/assets/6c3aab98-b7a9-47ce-ba90-1d46915a98ec)
-
-                                                                                                                     |
+For detailed steps and complete instructions, please refer to the full article on Alibaba Cloud’s official documentation:  
+👉 [Read the full guide here](https://www.alibabacloud.com/help/emr/emr-serverless-spark/use-cases/implement-doris-read-and-write-operations-in-emr-serverless-spark?utm_content=g_1000402564)                                                                                                     
