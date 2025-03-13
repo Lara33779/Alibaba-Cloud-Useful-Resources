@@ -66,4 +66,7 @@ On the **Nodes** tab, click the name of a node group to view the associated vSwi
 | Port Range | The port number. In this example, enter 9092. |
 | Authorization Object | The CIDR block of the vSwitch obtained in the previous step. Important To prevent attacks from external users, we recommend that you do not set the Authorization Object parameter to 0.0.0.0/0.|
 
+For detailed steps and complete instructions, please refer to the full article on Alibaba Cloud’s official documentation:  
+👉 [Read the full guide here](https://www.alibabacloud.com/help/emr/emr-serverless-spark/use-cases/submit-a-pyspark-stream-task-through-serverless-spark?spm=a2c63.p38356.help-menu-28066.d_3_2.b5956f9b1ndoxd?utm_content=g_1000402584)   
+
 
