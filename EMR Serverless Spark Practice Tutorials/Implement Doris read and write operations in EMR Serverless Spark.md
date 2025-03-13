@@ -3,7 +3,7 @@ Implement Doris read and write operations in EMR Serverless Spark
 Leveraging the official Spark Connector from Apache Doris, EMR Serverless Spark can be configured to connect to Doris during development. This topic explains how to execute data read and write operations with Doris within the EMR Serverless Spark environment.
 
 **Background information**
-
+--------------------------------
 Apache Doris is a high-performance, real-time analytics database suitable for report analysis, ad hoc queries, and data lake federated query acceleration. For more information, see Introduction to Apache Doris.
 
 EMR Serverless Spark is a high-performance Lakehouse product compatible with open-source Spark, offering fully managed enterprise-level data platform services. Integrating Apache Doris with EMR Serverless Spark enables efficient data read, write, and analysis operations, facilitating a complete data processing workflow.
