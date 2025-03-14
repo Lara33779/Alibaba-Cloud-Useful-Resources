@@ -56,3 +56,4 @@ The following information is returned.
 ```html
 !hadoop fs -ls oss://my-bucket/spark/ | grep user
 ```
+👉 [Read the full guide here](https://www.alibabacloud.com/help/emr/emr-serverless-spark/use-cases/use-hadoop-commands-in-a-notebook-to-access-oss-or-oss-hdfs?utm_content=g_1000402585)  
