@@ -43,3 +43,7 @@ The following table describes the parameters:
 | resourceQueueId | No | 	The name of the queue. Default value: dev_queue. |
 | networkServiceId | No | The name of the network connection. **Note** This parameter is required only if the Spark job needs to access VPC resources. For more information, see Configure network connectivity between EMR Serverless Spark and a data source across VPCs. |
 | releaseVersion | No | The version of EMR Serverless Spark. Example: esr-2.2 (Spark 3.3.1, Scala 2.12, Java Runtime). |
+
+For detailed steps and complete instructions, please refer to the full article on Alibaba Cloud’s official documentation:  
+👉 [Read the full guide here](https://www.alibabacloud.com/help/emr/emr-serverless-spark/use-cases/use-the-spark-submit-cli-to-submit-spark-tasks?utm_content=g_1000402586)   
+
