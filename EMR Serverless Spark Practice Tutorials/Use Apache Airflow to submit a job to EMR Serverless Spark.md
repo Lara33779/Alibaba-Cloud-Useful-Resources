@@ -56,3 +56,6 @@ The following table describes the parameters:
 ```
 ## Step 2: Configure DAGs
 Apache Airflow provides Directed Acyclic Graphs (DAGs), which allow you to declare how jobs should run. The following are examples of how to call the EmrServerlessSparkStartJobRunOperator operation to run different types of Spark jobs in Apache Airflow.
+
+For detailed steps and complete instructions, please refer to the full article on Alibaba Cloud’s official documentation:  
+👉 [Read the full guide here](https://www.alibabacloud.com/help/emr/emr-serverless-spark/use-cases/use-apache-airflow-to-submit-tasks-to-emr-severless-spark?utm_content=g_1000402628)        
