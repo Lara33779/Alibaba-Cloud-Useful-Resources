@@ -57,3 +57,6 @@ You can modify the following connection properties:
 - **Host**: Enter the **endpoint** of the created gateway.
 - **Schema**: Enter **https**.
 - **Extra**: Enter a JSON string. Use the token that you copied in the previous step for ``` x-acs-spark-livy-token. ```
+
+For detailed steps and complete instructions, please refer to the full article on Alibaba Cloud’s official documentation:  
+👉 [Read the full guide here](https://www.alibabacloud.com/help/emr/emr-serverless-spark/use-cases/use-livy-operator-to-submit-a-task-through-apache-airflow?utm_content=g_1000402629)         
