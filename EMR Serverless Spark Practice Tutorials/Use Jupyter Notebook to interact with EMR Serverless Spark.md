@@ -74,4 +74,5 @@ The parameters are described in the following table:
 | ```<endpoint>``` | The endpoint of the Livy gateway. On the **Livy Gateway** page, click the name of the created Livy gateway and view the endpoint on the **Overview** tab.
 | ```<token>``` | 	The token that you copy from Step 1. |
 
-
+For detailed steps and complete instructions, please refer to the full article on Alibaba Cloud’s official documentation:  
+👉 [Read the full guide here](https://www.alibabacloud.com/help/emr/emr-serverless-spark/use-cases/use-the-sparkmagic-plugin-of-jupyter-notebook-to-interact-with-serverless-spark?utm_content=g_1000402641)   
