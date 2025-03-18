@@ -47,4 +47,5 @@ Apache Paimon catalogs can be used to manage all Apache Paimon tables in the sam
 | dlf.catalog.endpoint | The endpoint of DLF. | Yes | For more information, see Supported regions and endpoints. > **Note** If DLF resides in the same region as Realtime Compute for Apache Flink, the VPC endpoint is used. Otherwise, the public endpoint is used. |
 | dlf.catalog.region | The region in which DLF resides. | Yes | For more information, see Supported regions and endpoints. > **Note** Make sure that the value of this parameter matches the endpoint that is specified by the dlf.catalog.endpoint parameter. |
 
-   
+For detailed steps and complete instructions, please refer to the full article on Alibaba Cloud’s official documentation:  
+👉 [Read the full guide here](https://www.alibabacloud.com/help/emr/emr-serverless-spark/use-cases/use-realtime-compute-for-apache-flink-and-paimon-to-process-batch-data-and-streaming-data-in-a-unified-manner?utm_content=g_1000402647)   
