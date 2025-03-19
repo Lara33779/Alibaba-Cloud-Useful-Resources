@@ -25,3 +25,64 @@ Create an SQL session to connect to the MaxCompute project
 
 3. On the Create SQL Session page, configure the parameters and click **Create**. The following table describes the parameters.
 
+| Parameter | Description |
+| --- | --- |
+| Name | The name of the SQL session. In this example, the SQL session is named mc_sql_compute. |
+| Spark Configuration | The Spark configurations that are used to connect to the MaxCompute project. |
+
+```
+spark.sql.catalog.odps                        org.apache.spark.sql.execution.datasources.v2.odps.OdpsTableCatalog
+spark.sql.extensions                          org.apache.spark.sql.execution.datasources.v2.odps.extension.OdpsExtensions
+spark.sql.catalog.odps.enableNamespaceSchema  true
+spark.sql.sources.partitionOverwriteMode      dynamic
+spark.hadoop.odps.project.name                <project_name>
+spark.hadoop.odps.end.point                   http://service.cn-hangzhou-vpc.maxcompute.aliyun-inc.com/api
+spark.hadoop.odps.access.id                   <accessId>
+spark.hadoop.odps.access.key                  <accessKey>
+```
+
+| Spark Configuration | Configure the following parameters based on your business requirements: |
+- ```<project_name>```: the name of the MaxCompute project.
+- ```http://service.cn-hangzhou-vpc.maxcompute.aliyun-inc.com/api```: the endpoint of the MaxCompute project. For more information, see Endpoints.
+- ```<accessId>```: the AccessKey ID of the Alibaba Cloud account that is used to access MaxCompute.
+- ```<accessKey>```: the AccessKey secret of the Alibaba Cloud account that is used to access MaxCompute.
+
+Create a notebook session to connect to the MaxCompute project
+
+1. Go to the Notebook Sessions tab.
+
+  a. Log on to the EMR console.
+
+  b. In the left-side navigation pane, choose **EMR Serverless > Spark**.
+
+  c. On the **Spark** page, find the desired workspace and click the name of the workspace.
+
+  d. In the left-side navigation pane of the **EMR Serverless Spark** page, choose **Operation Center > Sessions**.
+
+  e. Click the **Notebook Sessions** tab.
+
+2. Click Create **Notebook Session**.
+
+3. On the Create Notebook Session page, configure the parameters and click **Create**. The following table describes the parameters.
+
+| **Parameter** | **Description** |
+| **Name** | The name of the notebook session. In this example, the notebook session is named mc_notebook_compute. |
+| **Spark Configuration** | The Spark configurations that are used to connect to the MaxCompute project. |
+
+```
+spark.sql.catalog.odps                        org.apache.spark.sql.execution.datasources.v2.odps.OdpsTableCatalog
+spark.sql.extensions                          org.apache.spark.sql.execution.datasources.v2.odps.extension.OdpsExtensions
+spark.sql.catalog.odps.enableNamespaceSchema  true
+spark.sql.sources.partitionOverwriteMode      dynamic
+spark.hadoop.odps.project.name                <project_name>
+spark.hadoop.odps.end.point                   http://service.cn-hangzhou-vpc.maxcompute.aliyun-inc.com/api
+spark.hadoop.odps.access.id                   <accessId>
+spark.hadoop.odps.access.key                  <accessKey>
+```
+Configure the following parameters based on your business requirements:
+- ```<project_name>```: the name of the MaxCompute project.
+- ```http://service.cn-hangzhou-vpc.maxcompute.aliyun-inc.com/api```: the endpoint of the MaxCompute project. For more information, see Endpoints.
+- ```<accessId>```: the AccessKey ID of the Alibaba Cloud account that is used to access MaxCompute.
+- ```<accessKey>```: the AccessKey secret of the Alibaba Cloud account that is used to access MaxCompute.
+
+### Step 2: Query data from or write data to the MaxCompute project
