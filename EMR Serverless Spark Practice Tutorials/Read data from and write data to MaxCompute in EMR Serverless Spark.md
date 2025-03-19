@@ -86,3 +86,6 @@ Configure the following parameters based on your business requirements:
 - ```<accessKey>```: the AccessKey secret of the Alibaba Cloud account that is used to access MaxCompute.
 
 ### Step 2: Query data from or write data to the MaxCompute project
+For detailed steps and complete instructions, please refer to the full article on Alibaba Cloud’s official documentation:
+
+👉 [Read the full guide here](https://www.alibabacloud.com/help/emr/emr-serverless-spark/use-cases/implement-starrocks-read-and-write-operations-in-emr-serverless-spark?utm_content=g_1000402688)
