@@ -90,3 +90,6 @@ if __name__ == "__main__":
 | **Execution Parameters** | Enter the OSS path of the ```kmeans_data.txt``` data file. Format: ```oss://<yourBucketName>/kmeans_data.txt 2```. |
 | **Archive Resources** | Select **OSS** from the drop-down list and enter the OSS path of the ```pyspark_conda_env.tar.gz``` package. Format: ```oss://<yourBucketName>/pyspark_conda_env.tar.gz#condaenv```. |
 | **Spark Configuration** | ```spark.pyspark.driver.python  ./condaenv/bin/python. spark.pyspark.python         ./condaenv/bin/python |
+
+For detailed steps and complete instructions, please refer to the full article on Alibaba Cloud’s official documentation:  
+👉 [Read the full guide here](https://www.alibabacloud.com/help/emr/emr-serverless-spark/use-cases/use-third-party-libraries-of-python-in-a-pyspark-program)   
