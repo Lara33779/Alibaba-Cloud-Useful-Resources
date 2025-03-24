@@ -70,7 +70,7 @@ You can log on to the VPC console and obtain the CIDR block of a desired vSwitch
 
 a. Log on to the EMR console.
 
-b. On the **EMR** on **ECS** page, find the desired cluster and click the name of the cluster in the Cluster ID/Name column.
+b. On the **EMR** on **ECS** page, find the desired cluster and click the cluster name in the Cluster ID/Name column.
 
 c. In the Security section of the **Basic Information**, click the link to the right of **Cluster Security Group**.
 
@@ -79,7 +79,8 @@ d. On the **Security Group Details** tab, click **Add Rule**, configure the **Po
 | --- | --- |
 | **Port Range** | The port number. Enter 9083. |
 | **Authorization Object** | The CIDR block of the vSwitch obtained in the previous step. 
-> **Important** To prevent attacks from external users, we recommend that you do not set the Authorization Object parameter to 0.0.0.0/0.
+> **Important** To prevent attacks from external users, we recommend not setting the Authorization Object parameter to 0.0.0.0/0.
 
-
+For detailed steps and complete instructions, please refer to the full article on Alibaba Cloud’s official documentation:  
+👉 [Read the full guide here](https://www.alibabacloud.com/help/emr/emr-serverless-spark/use-cases/connect-emr-serverless-spark-to-the-hive-metastore-service?utm_content=g_1000402732)   
 
