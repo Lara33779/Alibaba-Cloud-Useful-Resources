@@ -63,3 +63,6 @@ DROP DATABASE ss_hudi_db;
 - For information about how to develop and orchestrate SQL jobs, see Get started with the development of Spark SQL jobs.
 
 - For more information about Hudi, see Apache Hudi.
+
+For detailed steps and complete instructions, please refer to the full article on Alibaba Cloud’s official documentation:  
+👉 [Read the full guide here](https://www.alibabacloud.com/help/emr/emr-serverless-spark/use-cases/hudi-data-source?utm_content=g_1000402734)   
