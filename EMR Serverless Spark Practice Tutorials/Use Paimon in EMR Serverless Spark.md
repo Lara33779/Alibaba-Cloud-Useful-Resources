@@ -98,3 +98,7 @@ DROP DATABASE paimon.ss_paimon_db CASCADE;
 6. Click **Run**. The following figure shows the output.
 
 ![image](https://github.com/user-attachments/assets/d95c187d-0c11-4ef4-9065-ad9e27a7071b)
+
+For detailed steps and complete instructions, please refer to the full article on Alibaba Cloud’s official documentation:  
+👉 [Read the full guide here](https://www.alibabacloud.com/help/emr/emr-serverless-spark/use-cases/paimon-data-source?utm_content=g_1000402733)   
+
