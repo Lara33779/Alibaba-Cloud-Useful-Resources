@@ -69,4 +69,9 @@ On the **Nodes** tab, click the name of a node group to view the associated vSwi
 For detailed steps and complete instructions, please refer to the full article on Alibaba Cloud’s official documentation:  
 👉 [Read the full guide here](https://www.alibabacloud.com/help/emr/emr-serverless-spark/use-cases/submit-a-pyspark-stream-task-through-serverless-spark?spm=a2c63.p38356.help-menu-28066.d_3_2.b5956f9b1ndoxd?utm_content=g_1000402584)   
 
+# Get 1000 CU·H Free – Try EMR Serverless Spark for 3 Months!🔥
+
+Click the image to claim your free trial now! 
+
+<a href="https://www.alibabacloud.com/free?_p_lc=1&accounttraceid=1d858b15fd1d4f139f1199f1f783aa15kask&keywords=EMR"><img src="https://img.alicdn.com/imgextra/i2/O1CN018w2DzS1d6EwTXCSen_!!6000000003686-0-tps-428-493.jpg"></a>
 
