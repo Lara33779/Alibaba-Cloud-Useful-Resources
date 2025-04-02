@@ -49,3 +49,10 @@ Apache Paimon catalogs can be used to manage all Apache Paimon tables in the sam
 
 For detailed steps and complete instructions, please refer to the full article on Alibaba Cloud’s official documentation:  
 👉 [Read the full guide here](https://www.alibabacloud.com/help/emr/emr-serverless-spark/use-cases/use-realtime-compute-for-apache-flink-and-paimon-to-process-batch-data-and-streaming-data-in-a-unified-manner?utm_content=g_1000402647)   
+
+# Get 1000 CU·H Free – Try EMR Serverless Spark for 3 Months!🔥
+
+Click the image to claim your free trial now! 
+
+<a href="https://www.alibabacloud.com/free?_p_lc=1&accounttraceid=1d858b15fd1d4f139f1199f1f783aa15kask&keywords=EMR"><img src="https://img.alicdn.com/imgextra/i2/O1CN018w2DzS1d6EwTXCSen_!!6000000003686-0-tps-428-493.jpg"></a>
+
