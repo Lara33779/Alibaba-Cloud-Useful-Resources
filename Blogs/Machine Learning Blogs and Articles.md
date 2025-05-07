@@ -53,8 +53,5 @@ This article explains how to use a single engine to implement the entire machine
 
 This tutorial looks at the Scikit-Learn library for machine learning and how you can use machine learning algorithms on Alibaba Cloud.
 
-<a href ="https://discord.gg/KPmq628K63"><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/lrvg8ctk39c4j2umywln.png"></a>
-
-
 
 
