@@ -45,6 +45,4 @@ Alibaba Cloud SAS offers unbeatable value for anyone looking to start their clou
 ### Join the Global Developer Community!  
 We’d love to have you as part of the **Alibaba Cloud Discord Community**! Connect with developers from around the world, share your ideas, and get support for your projects. Whether you're just getting started or an experienced developer, this is the perfect place to collaborate, ask questions, and stay up-to-date with the latest cloud tech.  
 
-![4e5aad322957ab5e86cee59bbfc94d84](https://github.com/user-attachments/assets/c80acfbe-eb6e-456d-a8db-8791efe4e06d)
-
-👉 **[Join the Discord Community Now!](https://discord.gg/745dTCNprg)**
+<a href ="https://discord.gg/745dTCNprg"><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/lrvg8ctk39c4j2umywln.png"></a>
