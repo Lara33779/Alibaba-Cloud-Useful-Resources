@@ -12,3 +12,5 @@ Get **1 Million Free Tokens** to explore **Alibaba Cloud’s** cutting-edge AI m
 
 👉 **Start building with industry-leading AI today!**  
 [Get your 1 Million Free Tokens now!](https://www.alibabacloud.com/en/free?product_id=78ef1316-1927fd32df6-6c22a96beef?utm_content=g_1000403393)
+
+<a href ="https://discord.gg/745dTCNprg"><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/lrvg8ctk39c4j2umywln.png"></a>
