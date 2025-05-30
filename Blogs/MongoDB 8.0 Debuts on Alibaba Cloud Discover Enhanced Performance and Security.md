@@ -97,6 +97,4 @@ We invite you to take advantage of this exciting update and explore the numerous
 
 Don't miss out - start your free trial today and see firsthand how this cutting-edge release can transform your applications. Plus, **join our MongoDB 8.0 Deep Dive webinar in June** for an in-depth exploration of its capabilities.
 
-![image](https://github.com/user-attachments/assets/39acbce1-504d-43b5-8cc7-ae3b0acc40bd)
-
-https://discord.com/invite/745dTCNprg
+<a href ="https://discord.com/invite/745dTCNprg"><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/lrvg8ctk39c4j2umywln.png"></a>
