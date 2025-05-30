@@ -1,20 +1,20 @@
 ![image](https://github.com/user-attachments/assets/ad531fea-330b-4886-87b1-a80eaf6466f8)
 
-This blog explores the new features, improvements, and benefits that MongoDB 8.0 brings to the table, making it a game-changer in the world of database management.
+This blog explores the new features, improvements, and benefits that MongoDB 8.0 brings to the table, making it a game-changer in database management.
 
 In the ever-evolving landscape of database technology, staying ahead of the curve is not just a preference - it’s a necessity.
 
 **Alibaba Cloud is proud to announce the general availability of MongoDB 8.0 on ApsaraDB for MongoDB**, delivering groundbreaking performance, security, and scalability to developers and enterprises worldwide. Whether building AI-driven apps, securing sensitive data, or scaling mission-critical workloads, MongoDB 8.0 empowers you to stay ahead.
 
-In this blog post, we will explore MongoDB 8.0's new features, improvements, and benefits, which make it a game-changer in the world of database management.
+In this blog post, we will explore MongoDB 8.0's new features, improvements, and benefits, making it a game-changer in database management.
 
-To experience the power of MongoDB 8.0, get started with a free trial today and reserve your spot in our upcoming **MongoDB 8.0 Deep Dive webinar** to explore how this release can transform your database management.
+To experience the power of MongoDB 8.0, [get started with a free trial](https://www.alibabacloud.com/product/databases?utm_content=g_1000404226) today and reserve your spot in our upcoming **MongoDB 8.0 Deep Dive webinar** to explore how this release can transform your database management.
 
 **Ready to transform your database strategy?**
 
-👉 Start Your Free Trial 
+👉 [Start Your Free Trial](https://www.alibabacloud.com/product/databases?utm_content=g_1000404226)
 
-👉 Reserve Your Webinar Seat
+👉 [Reserve Your Webinar Seat](https://www.alibabacloud.com/product/apsaradb-for-mongodb?utm_content=g_1000404227)
 
 ## Why MongoDB 8.0 Matters
 MongoDB has consistently been at the forefront of database innovation, and version 8.0 is no exception. This latest iteration introduces many new features and improvements, all geared towards ensuring seamless integration, efficient data management, and enhanced security. Whether you are a developer seeking to streamline your application deployment or an enterprise aiming to optimize your data-driven strategies, MongoDB 8.0 has something valuable to offer.
@@ -71,15 +71,15 @@ With advanced security features, enterprises can ensure that their data manageme
 ### 3. Scalability to Support Growth
 As enterprises grow, their data needs grow exponentially. MongoDB 8.0’s scalability features ensure that businesses can support this growth without the need for frequent infrastructure changes or costly upgrades.
 
-Explore these features with a free trial on Alibaba Cloud and see the difference MongoDB 8.0 can make for your business.
+Explore these features with a **free trial** on Alibaba Cloud and see the difference MongoDB 8.0 can make for your business.
 
 ## Why ApsaraDB for MongoDB?
 ApsaraDB for MongoDB isn't just a hosted database - it's a fully managed service designed for scale, security, and simplicity.
 
-Alibaba Cloud ApsaraDB for MongoDB offers a fully-managed database service that takes the hassle out of database management. By hosting MongoDB 8.0 on ApsaraDB, users can leverage the power of MongoDB while enjoying the benefits of Alibaba Cloud's robust infrastructure and advanced cloud technologies.
+[Alibaba Cloud ApsaraDB for MongoDB](https://www.alibabacloud.com/product/apsaradb-for-mongodb?utm_content=g_1000404227) offers a fully-managed database service that takes the hassle out of database management. By hosting MongoDB 8.0 on ApsaraDB, users can leverage the power of MongoDB while enjoying the benefits of Alibaba Cloud's robust infrastructure and advanced cloud technologies.
 
 ## Seamless Integration and High Availability
-ApsaraDB for MongoDB is designed for high availability and seamless integration, ensuring that your applications remain operational and accessible at all times. With Alibaba Cloud’s global network and data centers, you can deploy your applications closer to your users, reducing latency and improving user experience. Besides, it enables you to seamlessly integrate with other Alibaba Cloud services, including Object Storage Service (OSS), Simple Log Service (SLS), and more.
+[ApsaraDB for MongoDB](https://www.alibabacloud.com/product/apsaradb-for-mongodb?utm_content=g_1000404227) is designed for high availability and seamless integration, ensuring that your applications remain operational and accessible at all times. With Alibaba Cloud’s global network and data centers, you can deploy your applications closer to your users, reducing latency and improving user experience. Besides, it enables you to seamlessly integrate with other Alibaba Cloud services, including Object Storage Service (OSS), Simple Log Service (SLS), and more.
 
 ## Effortless Management and Monitoring
 Alibaba Cloud's automated management tools simplify routine tasks such as backups, monitoring, and scaling. This frees up valuable time for IT teams, allowing them to focus on strategic initiatives that drive business growth.
