@@ -1,6 +1,4 @@
 ![9a293dbd25cb696e86cf6985321cd2e8](https://github.com/user-attachments/assets/4aad2f2f-a133-4bb2-ad12-df9795ca59f1)
-AI, Artificial Intelligence, Business Intelligence, Quick BI, GenAI, Big Data, ZOLOZ, Agents
-
 This article explores how Quick BI revolutionizes ZOLOZ's BI with its multi-region platform, cementing its leadership in global digital identity.
 
 Join Alibaba Cloud Discord Community! **[Accept Your Invitation](https://discord.gg/nJVTvXPu6B)**
