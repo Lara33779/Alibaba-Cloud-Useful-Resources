@@ -9,7 +9,9 @@ Quick BI Trial is now FREE! **[Your Journey Starts Here](https://www.alibabaclou
 
 Founded in 2019, ZOLOZ has established itself as an internationally leading digital identity verification service provider, specializing in solutions such as eKYC (electronic Know Your Customer), anti-money laundering compliance, and transaction risk management. With coverage across 25 countries and regions and over 1.2 billion users, ZOLOZ has garnered international recognition through various certifications, including those from Gartner, serving notable clients such as TNGD and Lazada.
 
-> "The multi-region deployment and real-time alert functions of Quick BI allow us to quickly respond to fluctuations in the global market, ensuring business continuity for our clients."—— Yang Jingwei, Head of Overseas R&D at ZOLOZ
+> **"The multi-region deployment and real-time alert functions of Quick BI allow us to quickly respond to fluctuations in the global market, ensuring business continuity for our clients."**  
+>                                                                                                                                                  — *Yang Jingwei*  
+>                                                                                                                                         *Head of Overseas R&D at ZOLOZ*
 
 ![d7b72c2f31d10979915c3b3fb2941552](https://github.com/user-attachments/assets/fea49f88-f0ee-4bd8-b332-5837e499ad76)
 
