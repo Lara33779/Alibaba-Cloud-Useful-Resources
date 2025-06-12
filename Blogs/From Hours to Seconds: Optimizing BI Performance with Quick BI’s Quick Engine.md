@@ -2,7 +2,7 @@
 
 This article explores Quick BI’s Acceleration Engine, which delivers sub-second performance for billion-scale datasets. Discover its real-world impact on BI efficiency.
 
-Join Alibaba Cloud Discord Community! [**Accept Your Invitation**(https://discord.gg/nJVTvXPu6B)
+Join Alibaba Cloud Discord Community! [**Accept Your Invitation**](https://discord.gg/nJVTvXPu6B)
 
 Quick BI Trial is now FREE! [**Your Journey Starts Here**](https://www.alibabacloud.com/free?product_id=78ef1316-196427bcd9c-520cb878e71?utm_content=g_1000404556)
 
