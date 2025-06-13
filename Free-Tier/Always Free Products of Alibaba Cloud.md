@@ -8,7 +8,7 @@
 
 👇 Click the link **below** now to receive your **exclusive free trial**! 👨‍💻
 
- 👉[**ESA free plan details**](https://www.alibabacloud.com/product/esa?utm_content=g_1000404503)
+[**ESA free plan details**](https://www.alibabacloud.com/product/esa?utm_content=g_1000404503)
 
 [**Data Security Center**](https://www.alibabacloud.com/free?product_id=78ef1316-191ea12c5a2-275a36b1d77?utm_content=g_1000398983)
 
